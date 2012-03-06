@@ -25,3 +25,8 @@ func ConvertToMap(s interface{}) map[string]interface{} {
 
   return m
 }
+
+func StructName(s interface{}) string {
+  v := reflect.TypeOf(s)
+  return v.Name()
+}

@@ -46,3 +46,8 @@ func TestMapToStruct(t *testing.T) {
     Rating: 5, // out of 10, tho, so...
   })
 }
+
+func TestStructName(t *testing.T) {
+  var b Blog
+  assert.Equals(t, StructName(b), "Blog")
+}
