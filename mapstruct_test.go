@@ -51,4 +51,8 @@ func TestMapToStruct(t *testing.T) {
 func TestStructName(t *testing.T) {
   var b Blog
   assert.Equals(t, StructName(b), "Blog")
+  assert.Equals(t, StructName(&b), "Blog")
+
+  var b2 *Blog = &b
+  assert.Equals(t, StructName(&b2), "Blog")
 }
