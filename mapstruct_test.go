@@ -1,8 +1,7 @@
 package mapstruct
 
 import "testing"
-
-import "github.com/sdegutis/assert"
+import "github.com/sdegutis/go.assert"
 
 type Blog struct {
   Author string
